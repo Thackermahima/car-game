@@ -1,0 +1,89 @@
+<html>
+ 
+    
+     <style>
+        .hide {
+            display: none;
+        }
+        .enemy{
+    width: 70px;
+    height: 80px;
+    /* background:blue; */
+    position: absolute;
+    /* left:50px; */
+    bottom: 150px;
+    /* background-image:url('bluee.png'); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* border-radius: 100px; */
+    bottom: 5px;
+}
+
+.car{
+    width: 70px;
+    height: 80px;
+    /* background:blue; */
+    position: absolute;
+    background-image: url('b.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    bottom: 65px;
+    /* z-index: 2; */
+}
+
+        
+        .line {
+            position: absolute;
+            height: 100px;
+            width: 10px;
+            margin-left: 195px;
+            background-color: white;
+        }
+         .score{
+             background-color:black;
+             height:70px;
+             text-align:center;
+             color:white;
+             font-size:1.5em;
+             font-family:garamond;
+         }
+       
+        .gameArea {
+            background-color: black;
+            width: 400px;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            margin: auto;
+        }
+        .startScreen {
+            position: absolute;
+            background-color: red;
+            left: 25%;
+            top: 100px;
+            color: white;
+            z-index: 1;
+            text-align: center;
+            border: 1px solid red;
+            padding: 15px;
+            margin: auto;
+            width: 50%;
+            font-family: sans-serif;
+        }
+       
+           
+    </style>
+
+ 
+<body>
+    <div class="score"></div>
+    <div class="game">
+        <div class="startScreen">Press here to Start
+            <br>Arrow keys to move
+            <br>If you hit a another car you will lose.</div>
+        <div class="gameArea hide"></div>
+    </div>
+   
+
+    <script src="script.js"></script>
+  </body>
